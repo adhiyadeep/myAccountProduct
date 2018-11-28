@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="551dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:hint="New Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changePassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:hint="Confirm New Password"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/chk_passbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmPassword"
+        android:layout_gravity="end"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Show password" />
+
+    <Button
+        android:id="@+id/btn_changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPassword"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Save" />
+
+
+</LinearLayout>

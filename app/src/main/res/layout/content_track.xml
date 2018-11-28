@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".Track"
+        tools:showIn="@layout/activity_track">
+
+
+        <TextView
+            android:id="@+id/selectfromdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select From date (Click here) *"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textsize" />
+
+        <TextView
+            android:id="@+id/txtfromdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/textsize" />
+
+        <TextView
+            android:id="@+id/selecttodate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select to date (Click here)*"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textsize" />
+
+        <TextView
+            android:id="@+id/txttodate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/textsize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Company"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textsize" />
+
+        <Spinner
+            android:id="@+id/spinner_companyreport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/textsize"></Spinner>
+
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_login_form"
+            android:text="Clear"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:background="#25962d"
+                android:id="@+id/txt_modeofpayment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="View Income Details"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:background="#fec9151e"
+                android:id="@+id/txt_modeofpaymentexpense"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="View Expense Details"
+                android:textColor="@color/white" />
+
+            <Button
+                android:background="#fe141ea7"
+                android:id="@+id/btn_track"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="View Report Graph "
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_adminincomecostomer"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:background="#25962d"
+                android:gravity="center"
+                android:text="View Income Summary / Customer Wise"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_adminexpensecostomer"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fec9151e"
+                android:gravity="center"
+                android:text="View Expense Summary / Customer Wise"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/txt_pl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fec9151e"
+                android:gravity="center"
+                android:text="View PL Summary / Customer Wise"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/txt_profit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Profit"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+
+
+    </LinearLayout>
+</ScrollView>

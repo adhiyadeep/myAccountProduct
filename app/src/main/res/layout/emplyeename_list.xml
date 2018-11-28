@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@color/md_btn_selected"
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:text="Name"
+            android:id="@+id/txt_empname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_business_black_24dp"
+            android:text="Company Name"
+            android:id="@+id/txt_empcompanyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:text="Mobile"
+            android:id="@+id/txt_empnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:text="Emailid"
+            android:id="@+id/txt_emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/editicon"
+            android:text="Can Edit"
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:text="Activate"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_deactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:text="Deactivate"
+                android:textColor="#000000" />
+
+
+
+
+</RelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="7dp"
+            android:background="#c0c0c0"></View>
+    </LinearLayout>
+</ScrollView>

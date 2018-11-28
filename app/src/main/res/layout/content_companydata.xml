@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="35dp"
+        android:paddingLeft="35dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:background="@color/md_btn_selected"
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_business_black_24dp"
+            android:textStyle="bold"
+            android:id="@+id/txt_companyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Deep Infotech"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company Phone"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:id="@+id/txt_companyphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="9426496667"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:id="@+id/txt_emailid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="adhiyadeep@gmail.com"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:id="@+id/companyaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Kondhwa,Pune"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company City"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/ic_location_city_black_24dp"
+            android:id="@+id/txt_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Pune"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:text="Activate"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/btn_deactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape"
+                android:text="Deactivate"
+                android:textColor="#000000" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="#c0c0c0"></View>
+    </LinearLayout>
+</ScrollView>

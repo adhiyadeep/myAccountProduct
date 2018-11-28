@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Track">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            app:popupTheme="@style/PopupOverlay">
+
+            <ImageButton
+                android:id="@+id/img_refresh"
+                android:background="@android:color/transparent"
+                android:src="@drawable/refresh"
+                android:layout_toRightOf="@+id/toolbar"
+                android:layout_width="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="end"
+                android:layout_height="50dp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_track" />
+<LinearLayout
+    android:layout_gravity="bottom|right|end"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating"
+        android:layout_width="wrap_content"
+        app:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/report" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/downloadreport"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        app:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/downloadicon" />
+
+
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+</ScrollView>
+
